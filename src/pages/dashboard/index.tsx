@@ -1,3 +1,5 @@
+import { MainLayout } from "../../components/MainLayout";
+
 export const Dashboard = () => {
-  return <></>;
+  return <MainLayout left={<>siosuydhs</>} right={<>wewewewe</>} />;
 };
