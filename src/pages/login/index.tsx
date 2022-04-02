@@ -31,7 +31,7 @@ export const Login = () => {
           <Title>Colégio Rejuma</Title>
 
           <FormControl sx={{ m: 1, width: "100%" }}>
-            <TextField focused label="Email" size="small" type="email" />
+            <TextField focused label="Usuário" size="small" type="email" />
           </FormControl>
 
           <FormControl style={{ marginTop: 35 }} sx={{ m: 1, width: "100%" }}>
