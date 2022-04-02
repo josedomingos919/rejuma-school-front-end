@@ -11,10 +11,22 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  margin-top: 20px;
+  margin-top: 44px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: ${colors.dark};
+  }
+
+  .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+    .MuiOutlinedInput-notchedOutline {
+    border-color: ${colors.dark};
+  }
 `;
 
 export const Card = styled.div`
@@ -56,5 +68,29 @@ export const Image = styled.img`
 
 export const Title = styled.label`
   font-weight: bold;
-  font-size: 14px;
+  font-size: 20px;
+  margin-bottom: 35px;
+`;
+
+export const ButtonFooterContainer = styled.div`
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+export const LabelForgetPasswordContainer = styled.div``;
+export const LabelForgetPassword = styled.label`
+  color: ${colors.dark};
+  :hover {
+    cursor: pointer;
+  }
+`;
+
+export const CopyRightContainer = styled.div`
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-top: 70px;
+  color: ${colors.dark};
 `;
