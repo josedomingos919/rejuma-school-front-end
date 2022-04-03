@@ -39,14 +39,18 @@ export const LeftMenu = () => {
         <Image src={Logo} alt="Logo" />
       </LogoContainer>
       <ButtonContainer>
-        {menuItems.map(({ title, children, icon = <></> }, index) => (
+        {menuItems.map(({ title, children, icon = <>
+
+            </>, onClick = () => {} }, index) => (
           <>
             <ButtonMenu
-              onPress={() =>
+              onPress={() => {
                 handleSelectMenu({
                   menu: index,
-                })
-              }
+                });
+
+                onClick();
+              }}
               isDown={index === activeMenu?.menu}
               label={title}
               icon={icon}

@@ -74,5 +74,8 @@ export const menuItems: Array<MenuItemsProps> = [
   {
     title: "Sair",
     icon: <LogoutIcon style={iconStyle} fontSize="small" />,
+    onClick: () => {
+      window.location.href = "/";
+    },
   },
 ];

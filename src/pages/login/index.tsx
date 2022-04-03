@@ -17,8 +17,15 @@ import FormControl from "@mui/material/FormControl";
 import Button from "@mui/material/Button";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import { GoldButtonContainer } from "../../styles";
+import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/dashboard");
+  };
+
   return (
     <Container>
       <Card>
@@ -40,7 +47,13 @@ export const Login = () => {
 
           <ButtonFooterContainer style={{ marginTop: 35 }}>
             <GoldButtonContainer>
-              <Button variant="contained" endIcon={<ArrowRightIcon />}>
+              <Button
+                onClick={() => {
+                  handleLogin();
+                }}
+                variant="contained"
+                endIcon={<ArrowRightIcon />}
+              >
                 Entrar
               </Button>
             </GoldButtonContainer>
