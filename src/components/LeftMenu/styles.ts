@@ -1,3 +1,4 @@
+import { style } from "@mui/system";
 import styled from "styled-components";
 import { colors } from "../../utils/color";
 
@@ -87,3 +88,5 @@ export const UserImage = styled.img`
   height: 50px;
   border-radius: 50px;
 `;
+
+export const ItemContainer = styled.div``;

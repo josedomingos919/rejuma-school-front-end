@@ -3,6 +3,8 @@ export interface Props {}
 export type MenuItemsProps = {
   title: string;
   icon?: JSX.Element;
-  children?: Array<MenuItemsProps>;
   onClick?: () => void;
+  pathName?: string;
+  view?: JSX.Element;
+  children?: Array<MenuItemsProps>;
 };
