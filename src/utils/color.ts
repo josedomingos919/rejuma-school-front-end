@@ -9,4 +9,5 @@ export const colors = {
   darkTitle: "#808080",
   darkFocus: "#EEEEEE",
   darkBorder: "#EBEBEB",
+  darkHeader: "#F5F5F5",
 };

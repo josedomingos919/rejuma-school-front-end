@@ -2,8 +2,15 @@ import {
   ButtonContainer,
   Container,
   ContainerChildren,
+  FooterConteiner,
   Image,
+  ImageCard,
+  ImageContainer,
+  ImageContent,
+  LabelUserLevel,
+  LabelUserName,
   LogoContainer,
+  UserImage,
 } from "./styles";
 
 import Logo from "./../../assets/icon/logo2.jpg";
@@ -12,6 +19,7 @@ import { ButtonMenu } from "../ButtonMenu";
 import { useState } from "react";
 
 export const LeftMenu = () => {
+  const userImage = `https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small/beautiful-latin-woman-avatar-character-icon-free-vector.jpg`;
   const [activeMenu, __setActiveMenu] = useState({
     menu: 0,
     submenu: 0,
@@ -65,6 +73,17 @@ export const LeftMenu = () => {
           </>
         ))}
       </ButtonContainer>
+      <FooterConteiner>
+        <ImageContainer>
+          <ImageCard>
+            <UserImage src={userImage} />
+          </ImageCard>
+          <ImageContent>
+            <LabelUserName>José Ndonge</LabelUserName>
+            <LabelUserLevel>Professor</LabelUserLevel>
+          </ImageContent>
+        </ImageContainer>
+      </FooterConteiner>
     </Container>
   );
 };
